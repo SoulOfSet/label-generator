@@ -1,0 +1,5 @@
+{
+	"undefined": "localhost/label-generator",
+	"dev": "localhost/label-generator",
+	"prod": "localhost/label-generator"
+}

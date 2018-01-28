@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title><%= title %></title>
+    <% include partials/header %>
+    <script src="javascripts/index.js"></script>
+</head>
+<body>
+<div id="dynContainer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 offset-1">
+                <div class="jumbotron">
+                    <h1 class="text-center">Labels</h1>
+                    <div style="float: right">
+                        <button type="button" class="btn btn-danger">Remove</button>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addNew">Add New</button>
+                        <button type="button" class="btn btn-primary">Print Selected Labels</button>
+                    </div>
+                </div>
+                <table class="table" id="items-table">
+                    <thead>
+                    <tr>
+                        <th>Print</th>
+                        <!-- <th><input type="checkbox" ng-model="selectedAll" ng-click="checkAll()" /></th> -->
+                        <th scope="col">Bold Title</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Ingredients</th>
+                        <th scope="col">Used By</th>
+                        <th scope="col">PLU</th>
+                    </tr>
+                    </thead>
+                        <tbody>
+                        <!--<tr ng-repeat="personalDetail in personalDetails">
+                            &lt;!&ndash; COMMENT: Need to produce an identifier for each row so that the Print button knows what row it is printing. &ndash;&gt;
+                            <td><button class="btn btn-primary">Print</button></td>
+                            &lt;!&ndash; <td><input type="checkbox" ng-model="personalDetail.selected"/></td> &ndash;&gt;
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>-->
+                        </tbody>
+
+
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+                <div class="full-container">
+                    <tr id="loader">
+                        <div class="loader"></div>
+                    </tr>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="addNew" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add New</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form submit="addNew(personalDetails)">
+                    <div class="form-group">
+                        <label>Bold Title</label>
+                        <input type="Title" class="form-control" placeholder="Chicken & Salad" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="Title" class="form-control" placeholder="Wrap" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Price $</label>
+                        <input type="number" step="any" class="form-control" placeholder="1.50" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Ingredients</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Used By</label>
+                        <input type="text" class="form-control" placeholder="dd/mm/yy">
+                    </div>
+                    <div class="form-group">
+                        <label>PLU</label>
+                        <input type="number"  class="form-control" placeholder="888888">
+                    </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <input type="submit" class="btn btn-primary" value="Save Changes">
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

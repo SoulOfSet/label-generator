@@ -1,0 +1,146 @@
+[
+    {
+        "lBoldTitle": "Chicken & Salad",
+        "lTitle": "PREMIUM",
+        "lPrice": "$5.95",
+        "lIngredients": "Chicken all natural ingredients. Cheese - pasteurized milk, salt, starter cultures, enzyme, water, food acid (331,330), butter [salt mineral salt (339), reservative(202), natural color (160a), anti-caking agent(soy lecithin)]. Salad all natural ingredients. White Bread - bakers flour [soy flour, emulsifiers(481, 472e), wheat starch, sugar, flour, treating agents(516, 300, 920) enzymes (amylase)], soya flour, salt, vegetable oil, antioxidant(320), yeast & water. Margarine - Vegetable oils, water, salt, emulsipiers(47 soyabean lecithin), preservative (202), Flavour food acid (330), color (160a) vitamins A&B. Contains soy.",
+        "lUsedBy": "",
+        "lPLU": 888124,
+        "lNumRequired": 1
+    },
+    {
+        "lBoldTitle": "Chicken Caesar Half Wrap",
+        "lTitle": "",
+        "lPrice": "$5.90",
+        "lIngredients": "Cos Lettuce, Bacon,Roast Chicken, Egg, Cheese & Caesar Sauce",
+        "lUsedBy": "",
+        "lPLU": 888631,
+        "lNumRequired": null
+    },
+    {
+        "lBoldTitle": "Chicken Caesar Salad Bowl",
+        "lTitle": "",
+        "lPrice": "$7.50",
+        "lIngredients": "Cos Lettuce \nChicken Schnitzel\nBacon Parmesan Cheese\nEgg Croutons \nCaesar Dressing",
+        "lUsedBy": "",
+        "lPLU": 888858,
+        "lNumRequired": null
+    },
+    {
+        "lBoldTitle": "Chicken Caeser",
+        "lTitle": "Wrap",
+        "lPrice": "$5.90",
+        "lIngredients": "Chicken: Chicken (98%) Water, Salt Mineral Salts (451,450,452) Acid Regulator (331,262), Sucrose. Salad: all natural ingredients. Tortilla Wrap: wheat flour, hiamine,folic acid,water, antioxidant 320, sugar, baking powder, mineral salts ,450,500,341, acidity regulator, preservative 282, yeast, soy, nuts. Cheese: milk, salt, starter culture, enzyme, Egg; All natural ingredients;Dressing; Water, Vegetable Oil, Glucose Syrup, Sugar, Chedder Cheese,Thickeners, Xanthan Gum, Parmasen Cheese, Salt, Food Acids, Cream,Whey Protein, Mustard Seed, Garlic, Pepper, Fish Sauce, Colour (Caramel 150C), Tumeric; Bacon, Pork (90%), Water,Salt, Dextrose, Mineral Salts\n(451,452), Antioxident (316), Preservative (250),\nHydrolysed Vegetable Protein, Yeast Extract.\n\n",
+        "lUsedBy": "",
+        "lPLU": 888608,
+        "lNumRequired": 5
+    },
+    {
+        "lBoldTitle": "Chicken Caeser Wrap",
+        "lTitle": "",
+        "lPrice": "$7.90",
+        "lIngredients": "Cos Lettuce, Bacon,Roast Chicken, Egg, Cheese & Caesar Sauce",
+        "lUsedBy": "",
+        "lPLU": 888602,
+        "lNumRequired": 10
+    },
+    {
+        "lBoldTitle": "Chicken Cheese Lettuce & Mayo",
+        "lTitle": "PREMIUM",
+        "lPrice": "$5.95",
+        "lIngredients": "Chicken all natural ingredients. Cheese - pasteurized milk, salt, starter cultures, enzyme, water, food acid (331,330), butter [salt mineral salt (339), preservative(202), natural color (160a), anti-caking agent(soy lecithin)]. Salad all natural ingredients. White Bread - bakers flour [soy flour, emulsifiers(481, 472e), wheat starch, sugar, flour, treating agents(516, 300, 920) enzymes (amylase)], soya flour, salt, vegetable oil, antioxidant(320), yeast & water. Margarine - Vegetable \noils, water, salt, emulsipiers(47 soyabean lecithin), preservative (202), Flavour food acid (330), color (160a) vitamins A&B. Contains soy.",
+        "lUsedBy": "",
+        "lPLU": 888122,
+        "lNumRequired": null
+    },
+    {
+        "lBoldTitle": "Curried Egg & Lettuce",
+        "lTitle": "STANDARD",
+        "lPrice": "$4.95",
+        "lIngredients": "agents(516, 300, 920) enzymes(amylase)], soya flour, salt, vegetable oil, antioxidant(320), yeast & \nwater. Margarine - Vegetable oils, water, salt, emulsipiers(47 soyabean lecithin), preservative (202), \nFlavour food acid (330), color (160a) vitamins A&B. Contains soy.",
+        "lUsedBy": "",
+        "lPLU": 888156,
+        "lNumRequired": null
+    },
+    {
+        "lBoldTitle": "Curried Egg & Lettuce",
+        "lTitle": "STANDARD",
+        "lPrice": "$4.95",
+        "lIngredients": "Mayonnaise: water, sugar, vegetable oil, thickeners modified cornstarches, glucose, salt, \nfood acids acetic citric, mustard flour, vegetable gum xanthan, perserative potassium sorbate, \nantioxidant calcium disodium edta, turmeric, natural colour annatto. Curry Powder: coriander, \nturmeric, fennel, pepper, cumin, chilli, fenugreek, garlic, ginger & salt. Salad:  all natural ingredients. \nBread; bakers flour, soy flour, emulsifiers 481 472e, wheat starch, sugar, flour, treating \nagents 516 300 920, enzymes amylase, soya flour, salt, vegetable oil, antioxidant 320, yeast & \nwater. Margarine: vegetable oils, water, salt, emulsfiers 47, soyabean lecithin, preservative 202, \nflavour, food acid 330, colour 160a, vitamins A&B. Contains soy. Egg.",
+        "lUsedBy": "",
+        "lPLU": 888156,
+        "lNumRequired": null
+    },
+    {
+        "lBoldTitle": "Ham & Cheese",
+        "lTitle": "STANDARD",
+        "lPrice": "$4.95",
+        "lIngredients": "Shoulder Ham - pork meat(58%), water, salt, soy protein, starch(potato) dextrose(maize\n or tapioca), modified tapioca starch(1412), food acid(325), mineral salts(451,508,450,\n452), vegetable gum(407), natural smoke flavor, sugar, antioxidants(316), sodium nitrite\n(250), color(120), yeast extract. Cheese -pasteurized milk, salt, starter cultures, enzyme, \nwater, food acid (331,330), butter [salt mineral salt (339),preservative(202), natural color\n(160a), anti-caking agent(soy lecithin)]. White Bread - bakers flour [soy flour, emulsifiers\n(481, 472e), wheat starch, sugar, flour, treating agents(516, 300, 920) enzymes(amylase)\nsoya flour, salt, vegetable oil, antioxidant(320), yeast & water. Margarine - Vegetable oils, \nwater, salt, emulsipiers(47 soyabean lecithin), preservative (202), Flavour food acid (330), \ncolor (160a) vitamins A&B. Contains soy.",
+        "lUsedBy": "",
+        "lPLU": 888111,
+        "lNumRequired": null
+    },
+    {
+        "lBoldTitle": "Ham Cheese & Pickles",
+        "lTitle": "STANDARD",
+        "lPrice": "$4.95",
+        "lIngredients": "Sweet Mustard Pickles: water, cauliflower, onion, \ncucumber, sugar, salt, food acid 260, thickener 1412, starch, spice, colour 102. Bread: \nbakers flour, soy flour, emulsifiers 481 472e, wheat starch, sugar, flour, treating agents\n516 300 920, enzymes amylase, soya flour, salt, vegetable oil, antioxidant 320, yeast \n& water. Margarine: vegetable oils, water, salt, emulsifiers 47, soyabean lecithin, \npreservative 202, flavour, food acid 330, colour 160a, vitamins A&B. Contains soy.\nCheese: milk, non fat milk solids, vegetable oil, antioxidant 320, food acids 270 331, \nsalt, maltodextrin, mineral salts 339 452, preservatives 200 234, colours 1601 160b,",
+        "lUsedBy": "",
+        "lPLU": 888114,
+        "lNumRequired": null
+    },
+    {
+        "lBoldTitle": "Ham Cheese & Tomato",
+        "lTitle": "STANDARD",
+        "lPrice": "$4.95",
+        "lIngredients": "Shoulder Ham - pork meat(58%), water, salt, soy protein, starch(potato) dextrose(maize or tapioca),\nmodified tapioca starch(1412), food acid(325), mineral salts(451,508,450,452),  vegetable gum(407), \nnatural smoke flavor, sugar, antioxidants(316), sodium nitrite(250), color(120), yeast extract. \nCheese - pasteurized milk, salt, starter cultures, enzyme, water, food acid (331,330), butter [salt \nmineral salt (339), preservative(202), natural color (160a),anti-caking agent(soy lecithin)]. Salad \nall natural ingredients. White Bread - bakers flour [soy flour, emulsifiers(481, 472e), wheat starch, \nsugar, flour, treating agents(516, 300, 920)enzymes(amylase)], soya flour, salt, vegetable oil, \nantioxidant(320), yeast & water. Margarine - Vegetable oils, water, salt, emulsipiers(47 soyabean \nlecithin), preservative (202), Flavour food acid (330), color (160a) vitamins A&B. Contains soy.",
+        "lUsedBy": "",
+        "lPLU": 888100,
+        "lNumRequired": null
+    },
+    {
+        "lBoldTitle": "Ham Cheese & Tomato",
+        "lTitle": "STANDARD",
+        "lPrice": "$5.95",
+        "lIngredients": "Salad: all natural ingredients. Bread: bakers flour, soy flour, emulsifiers 481 472e, wheat starch, \nsugar, flour, treating agents 516 300 920, enzymes amylase, soya flour, salt, vegetable oil, \nantioxidant 320, yeast & water. Margarine: vegetable oils, water, salt, emulsifiers 47, soyabean \nlecithin, preservative 202, flavour, food acid 330, colour 160a, vitamins A&B. Contains soy.\nCheese: milk, non fat milk solids, vegetable oil, antioxidant 320, food acids 270 331, salt,\nmaltodextrin, mineral salts 339 452, preservatives 200 234, colours 160a 160b, starter\nculture, enzymes, 42% milk solids. Ham: pork 74%, water, salt, food acid 325, dextrose,\nsucrose, mineral salts 450 451 452, antioxidant 316, sodium nitrite 250.",
+        "lUsedBy": "",
+        "lPLU": 888100,
+        "lNumRequired": null
+    },
+    {
+        "lBoldTitle": "Ham Salad Wrap",
+        "lTitle": "",
+        "lPrice": "$7.90",
+        "lIngredients": "Cos Lettuce, Ham, Tomato, Cucumber, Carrot, Cheese & Whole Egg Mayonnaise",
+        "lUsedBy": "",
+        "lPLU": 888622,
+        "lNumRequired": null
+    },
+    {
+        "lBoldTitle": "Salad & Cheese",
+        "lTitle": "PREMIUM",
+        "lPrice": "$5.95",
+        "lIngredients": "Salad: all natural ingredients. Bread: bakers flour, soy flour, emulsifiers 481 472e, wheat \nstarch, sugar, flour, treating agents 516 300 920, enzymes amylase, soya flour, salt, vegetable \noil, antioxidant 320, yeast & water. Margarine: vegetable oils, water, salt, emulsifiers 47 \nsoyabean lecithin, preservative 202, flavour, food acid 330, colour 160a, vitamins A&B. \nContains soy. Cheese: milk, non fat milk solids, vegetable oil, antioxidant 320, \nfood acids 270 331, salt, maltodextrin, mineral salts 339 452, preservatives\n200 234, colours 160a 160b, starter culture, enzymes, 42% milk solids.",
+        "lUsedBy": "",
+        "lPLU": 888179,
+        "lNumRequired": null
+    },
+    {
+        "lBoldTitle": "Silverside and Pickles",
+        "lTitle": "PREMIUM",
+        "lPrice": "$5.95",
+        "lIngredients": "Corned Beef/Silverside- beef (70%), water, salt, soy protein, starch (potato/pea), food acid(325), \nsugar, vegetable gum(407), maltodextrins (from wheat), mineral salts(451,452), antioxidant(316) \nspices, sodium nitrite(250). Sweet Mustard Pickles - water, cauliflower, onion, cucumber, sugar, \nsalt, food acid(260), thickener(1412), starch, spice, color(102). White Bread - bakers flour [soy \nflour, emulsifiers(481, 472e), wheat starch, sugar, flour, treating agents(516, 300, 920) enzymes\n(amylase)], soya flour, salt, vegetable oil, antioxidant(320), yeast & water. Margarine - Vegetable \noils, water, salt, emulsipiers(47 soyabean lecithin), preservative (202), Flavour food acid (330), \ncolor (160a) vitamins A&B. Contains soy.",
+        "lUsedBy": "",
+        "lPLU": 888184,
+        "lNumRequired": null
+    },
+    {
+        "lBoldTitle": "Sweet Chilli Chicken Salad Bowl",
+        "lTitle": "",
+        "lPrice": "$7.50",
+        "lIngredients": "Hydro Green Oak Lettuce \nSweet Chilli Chicken Strips\nBacon Tasty Cheese\nCherry Tomatoes Croutons \nSweet Chilli Mayo Dressing",
+        "lUsedBy": "",
+        "lPLU": 888859,
+        "lNumRequired": null
+    }
+]
