@@ -25,14 +25,15 @@ exports.getItemData = function(query, callback) {
     if(errorData){
         callback({status: false, message:"Missing field: " + errorData});
     } else{
-        itemsData.getProducts(parseInt(query.number), query.sortField, parseInt(query.offset), function(err, items){
+        itemsData.getItems(parseInt(query.number), query.sortField, parseInt(query.offset), function(err, count, items){
             if(err){
                 console.log("Unable to retrieve items: " + err);
                 callback({status: false, message:"Unable to retrieve items: " + err});
             } else{
-                callback({status: true}, items);
+                data = {count: count, items: items};
+                callback({status: true}, data);
             }
-        })
+        });
     }
 
 

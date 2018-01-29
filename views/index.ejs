@@ -18,6 +18,11 @@
                         <button type="button" class="btn btn-primary">Print Selected Labels</button>
                     </div>
                 </div>
+                <div id="data-table-control">
+                    <label for="curr-page">Page</label>
+                    <input type="text" name="curr-page" class="form-control">
+                </div>
+
                 <table class="table" id="items-table">
                     <thead>
                     <tr>
@@ -29,23 +34,11 @@
                         <th scope="col">Ingredients</th>
                         <th scope="col">Used By</th>
                         <th scope="col">PLU</th>
+                        <th scope="col">Number Required</th>
                     </tr>
                     </thead>
                         <tbody>
-                        <!--<tr ng-repeat="personalDetail in personalDetails">
-                            &lt;!&ndash; COMMENT: Need to produce an identifier for each row so that the Print button knows what row it is printing. &ndash;&gt;
-                            <td><button class="btn btn-primary">Print</button></td>
-                            &lt;!&ndash; <td><input type="checkbox" ng-model="personalDetail.selected"/></td> &ndash;&gt;
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                        </tr>-->
                         </tbody>
-
-
                     <tfoot>
 
                     </tfoot>
@@ -58,6 +51,7 @@
 
             </div>
         </div>
+
     </div>
 </div>
 <!-- Modal -->

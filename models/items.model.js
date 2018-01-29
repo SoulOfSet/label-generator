@@ -15,13 +15,21 @@ var itemsSchema = new Schema({
     lNumRequired: {type: Number, require: false}
 });
 
-itemsSchema.methods.getProducts = function(number, sortField, offset, callback){
+itemsSchema.methods.getItems = function(number, sortField, offset, callback){
     Items.find()
         .sort(sortField)
         .limit(number)
         .skip(offset)
         .exec(function(err, items){
-            callback(err, items)
+            if(!err){
+                Items.count({}, function (err, count) {
+                    console.log(count);
+                    callback(err, count, items);
+                });
+            }
+            else{
+                callback(err, null)
+            }
         });
 };
 
