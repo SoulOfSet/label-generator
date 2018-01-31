@@ -26,7 +26,8 @@ var updateTable = function(data, count){
             "<td>" + item.lIngredients + "</td>" +
             "<td>" + checkNullUndef(item.lUsedBy) + "</td>" +
             "<td>" + item.lPLU + "</td>" +
-            "<td>" + checkNullUndef(item.lNumRequired) + "</td>")
+            "<td>" + checkNullUndef(item.lNumRequired) + "</td>" +
+            "<td style='display: none'>" + item._id + "</td>")
     });
     $(".loader").hide();
 };

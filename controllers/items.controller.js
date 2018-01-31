@@ -45,7 +45,6 @@ exports.addItem = function(itemData, callback){
     item.lIngredients = itemData.ingredients;
     item.lUsedBy = itemData.usedBy;
     item.lPLU = itemData.PLU;
-    item.lNumRequired = itemData.numRequired;
 
     itemsData.addItem(item, function(err, item){
         if(err){

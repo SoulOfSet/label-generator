@@ -11,8 +11,7 @@ var itemsSchema = new Schema({
     lPrice: {type: Number, require: true},
     lIngredients: {type: String, require: false},
     lUsedBy: {type: Date, require: false},
-    lPLU: {type: Number, require: true, unique: true},
-    lNumRequired: {type: Number, require: false}
+    lPLU: {type: Number, require: true, unique: true}
 });
 
 itemsSchema.methods.getItems = function(number, sortField, offset, callback){
