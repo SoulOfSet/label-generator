@@ -19,7 +19,7 @@ var updateTable = function(data, count){
     $tableBody.empty();
     $.each(data, function(index, item){
         $tableBody.append("<tr>" +
-            "<td><input type='checkbox'/>&nbsp;</td>" +
+            "<td><input id='item-print' type='button'/>Print</td>" +
             "<td>" + item.lBoldTitle + "</td>" +
             "<td>" + item.lTitle + "</td>" +
             "<td>" + item.lPrice + "</td>" +
