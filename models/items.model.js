@@ -11,7 +11,7 @@ var itemsSchema = new Schema({
     lPrice: {type: Number, require: true},
     lIngredients: {type: String, require: false},
     lUsedBy: {type: Date, require: false},
-    lPLU: {type: Number, require: true},
+    lPLU: {type: Number, require: true, unique: true},
     lNumRequired: {type: Number, require: false}
 });
 
@@ -31,6 +31,18 @@ itemsSchema.methods.getItems = function(number, sortField, offset, callback){
                 callback(err, null)
             }
         });
+};
+
+itemsSchema.methods.addItem = function(item, callback){
+    item.save(function(err, item){
+        callback(err, item)
+    });
+};
+
+itemsSchema.methods.deleteItems = function(itemIDs, callback){
+    Items.deleteMany({_id: {$in: itemIDs}}, function(err){
+        callback(err);
+    })
 };
 
 var Items = mongoose.model('Items', itemsSchema);

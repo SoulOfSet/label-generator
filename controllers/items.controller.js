@@ -1,6 +1,5 @@
 var itemsModel = require("../models/items.model");
-var mongoose = require('mongoose');
-var itemsSchema = require('../models/items.model').schema;
+
 
 
 var itemsData = new itemsModel();
@@ -27,6 +26,7 @@ exports.getItemData = function(query, callback) {
     } else{
         itemsData.getItems(parseInt(query.number), query.sortField, parseInt(query.offset), function(err, count, items){
             if(err){
+                callback({status: false, message: err});
                 console.log("Unable to retrieve items: " + err);
                 callback({status: false, message:"Unable to retrieve items: " + err});
             } else{
@@ -35,6 +35,34 @@ exports.getItemData = function(query, callback) {
             }
         });
     }
+};
 
+exports.addItem = function(itemData, callback){
+    item = new itemsModel();
+    item.lBoldTitle = itemData.boldTitle;
+    item.lTitle = itemData.title;
+    item.lPrice = itemData.price;
+    item.lIngredients = itemData.ingredients;
+    item.lUsedBy = itemData.usedBy;
+    item.lPLU = itemData.PLU;
+    item.lNumRequired = itemData.numRequired;
 
+    itemsData.addItem(item, function(err, item){
+        if(err){
+            console.log("Unable to add item: " + err);
+            callback({status: false, message: err});
+        } else{
+            callback({status: true}, item);
+        }
+    });
+};
+
+exports.deleteItems = function(itemIDs, callback){
+    itemsData.deleteItems(itemIDs, function(err) {
+        if(err){
+            callback({status: false, message: err});
+        } else{
+            callback({status: true});
+        }
+    });
 };

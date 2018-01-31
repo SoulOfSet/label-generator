@@ -14,6 +14,24 @@ router.get('/get_items', function (req, res) {
 });
 
 router.post('/add_item', function (req, res) {
+    itemsController.addItem(req.body, function(state, item){
+        if(state.status){
+            res.json(item);
+        }else{
+            console.log(item);
+            res.status(500).send({error: state.message})
+        }
+    });
+});
+
+router.post('/delete_items', function (req, res) {
+    itemsController.deleteItems(req.body.items, function(state){
+        if(state.status){
+            res.json({status: "success"});
+        }else{
+            res.status(500).send({error: state.message})
+        }
+    });
 
 });
 
