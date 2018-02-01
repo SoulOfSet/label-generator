@@ -29,7 +29,7 @@ router.post('/delete_items', function (req, res) {
         if(state.status){
             res.json({status: "success"});
         }else{
-            res.status(500).send({error: state.message})
+            res.status(500).send({status: failed, error: state.message})
         }
     });
 

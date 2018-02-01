@@ -13,9 +13,9 @@
                 <div class="jumbotron">
                     <h1 class="text-center">Labels</h1>
                     <div style="float: right">
-                        <button type="button" class="btn btn-danger">Remove</button>
+                        <button type="button" class="btn btn-danger">Remove Selected</button>
                         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addNew">Add New</button>
-                        <button type="button" class="btn btn-primary">Print Selected Labels</button>
+                        <!--<button type="button" class="btn btn-primary">Print Selected Labels</button>-->
                     </div>
                 </div>
                 <form>
@@ -29,11 +29,6 @@
                     </div>
                   </div>
                 </form>
-                <div id="data-table-control">
-                    <label for="curr-page">Page</label>
-                    <input type="text" name="curr-page" class="form-control">
-                </div>
-
                 <table class="table" id="items-table">
                     <thead>
                     <tr>
@@ -83,44 +78,49 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form submit="addNew(personalDetails)">
+                <form id="add-new-form">
                     <div class="form-group">
                         <label>Bold Title</label>
-                        <input type="Title" class="form-control" placeholder="Chicken & Salad" required>
+                        <input type="Title" class="form-control" name="boldTitle" placeholder="Chicken & Salad" required>
                     </div>
                     <div class="form-group">
                         <label>Title</label>
-                        <input type="Title" class="form-control" placeholder="Wrap" required>
+                        <input type="Title" class="form-control" name="title" placeholder="Wrap" required>
                     </div>
                     <div class="form-group">
                         <label>Price $</label>
-                        <input type="number" step="any" class="form-control" placeholder="1.50" required>
+                        <input type="number" step="any" class="form-control" name="price" placeholder="1.50" required>
                     </div>
                     <div class="form-group">
                         <label>Ingredients</label>
-                        <textarea class="form-control" rows="3"></textarea>
+                        <textarea class="form-control" name="ingredients" rows="3"></textarea>
                     </div>
                     <div class="form-group">
                         <label>Used By</label>
-                        <input type="text" class="form-control" placeholder="dd/mm/yy">
+                        <input type="text" class="form-control" name="usedBy" placeholder="dd/mm/yy">
                     </div>
                     <div class="form-group">
                         <label>PLU</label>
-                        <input type="number"  class="form-control" placeholder="888888">
+                        <input type="number"  class="form-control" name="PLU" placeholder="888888">
                     </div>
 
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <input type="submit" class="btn btn-primary" value="Save Changes">
+                <input type="button" class="btn btn-primary" onclick="addItem('lol')" value="Save Changes">
             </div>
             </form>
         </div>
     </div>
 </div>
-
-
-
-
+<div id="print-section" style="visibility: hidden">
+    <p id="pboldTitle"></p>
+    <p id="ptitle"></p>
+    <p id="pprice"></p>
+    <p id="pingredients"></p>
+    <p id="pusedBy"></p>
+    <svg id="pbarcode"></svg>
+    <p id="pPLU" style="visibility: hidden"></p>
+</div>
 </body>
 </html>

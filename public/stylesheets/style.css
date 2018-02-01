@@ -45,3 +45,23 @@
     width: 100%;
     display: inline-block;
 }
+
+@media print
+{
+    body * {
+        visibility: hidden;
+    }
+    #print-section, #print-section * {
+        visibility: visible;
+    }
+    #print-section {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5.7cm;
+        height: 10cm;
+    }
+    p {
+        page-break-before: always;
+    }
+}
