@@ -52,9 +52,23 @@
 
 @media print
 {
-    body * {
+    html, body {
         visibility: hidden;
+        width:100%;
     }
+
+    div.fix-break-print-page {
+        page-break-inside: avoid;
+    }
+
+    #print-section {
+        display: block;
+    }
+
+    #print-section:last-child {
+        page-break-after: avoid;
+    }
+
     #print-section, #print-section * {
         visibility: visible;
     }
@@ -67,7 +81,6 @@
         width: 5.7cm;
         height: 10cm;
     }
-    p {
-        page-break-before: always;
-    }
+
+
 }
