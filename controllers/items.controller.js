@@ -24,16 +24,32 @@ exports.getItemData = function(query, callback) {
     if(errorData){
         callback({status: false, message:"Missing field: " + errorData});
     } else{
-        itemsData.getItems(parseInt(query.number), query.sortField, parseInt(query.offset), function(err, count, items){
-            if(err){
-                callback({status: false, message: err});
-                console.log("Unable to retrieve items: " + err);
-                callback({status: false, message:"Unable to retrieve items: " + err});
-            } else{
-                data = {count: count, items: items};
-                callback({status: true}, data);
-            }
-        });
+        if(query.query !== null || query.query !== undefined){
+            itemsData.getItemsByTitle(parseInt(query.number), query.sortField, parseInt(query.offset), query.query, null,
+                                  function(err, count, items){
+                if(err){
+                    callback({status: false, message: err});
+                    console.log("Unable to retrieve items: " + err);
+                    callback({status: false, message:"Unable to retrieve items: " + err});
+                } else{
+                    data = {count: count, items: items};
+                    callback({status: true}, data);
+                }
+            });
+        }
+        else{
+            itemsData.getItems(parseInt(query.number), query.sortField, parseInt(query.offset), function(err, count, items){
+                if(err){
+                    callback({status: false, message: err});
+                    console.log("Unable to retrieve items: " + err);
+                    callback({status: false, message:"Unable to retrieve items: " + err});
+                } else{
+                    data = {count: count, items: items};
+                    callback({status: true}, data);
+                }
+            });
+        }
+
     }
 };
 

@@ -4,9 +4,17 @@ var numPerPage = 10;
 var currPage = 1;
 
 $( document ).ready(function() {
+
+    $(window).keydown(function(event){
+        if(event.keyCode == 13) {
+            event.preventDefault();
+            return false;
+        }
+    });
+
     $tableBody = $('#items-table').find("tbody");
     $(".loader").show();
-    getItems(10, 0, "lTitle");
+    getItems(10, 0, "lTitle", null);
 
     $("#items-table").on('click', '#item-print', function (data) {
         var $row = $(this).closest("tr"),       // Finds the closest row <tr>
@@ -57,9 +65,9 @@ var updateTable = function(data, count){
     $(".loader").hide();
 };
 
-var getItems = function(number, offset, sortField){
+var getItems = function(number, offset, sortField, query){
 
-    $.get("/items/get_items", {number: number, offset: offset, sortField: sortField}, function(data){
+    $.get("/items/get_items", {number: number, offset: offset, sortField: sortField, query: query}, function(data){
         updateTable(data.items, data.count);
         numPages = Math.ceil(data.count/number);
         numPerPage = number;
@@ -93,6 +101,17 @@ var addItem = function(){
         err = JSON.parse(data.responseText);
         alert(err.error.errmsg);
     })
+};
+
+var search = function(){
+    var query = $('#query-input').val();
+    if(query === "" || query === undefined || query === null){
+        console.log("Empty form");
+    }
+    else{
+        getItems(numPerPage, 1, "lTitle", query);
+    }
+
 };
 
 

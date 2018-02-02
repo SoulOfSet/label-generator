@@ -32,6 +32,24 @@ itemsSchema.methods.getItems = function(number, sortField, offset, callback){
         });
 };
 
+itemsSchema.methods.getItemsByTitle = function(number, sortField, offset, query, queryField, callback){
+    Items.find({"lBoldTitle": {$regex: new RegExp(query, "i")}})
+        .sort(sortField)
+        .limit(number)
+        .skip(offset)
+        .exec(function(err, items){
+            if(!err){
+                Items.count({"lBoldTitle": {$regex: new RegExp(query, "i")}}, function (err, count) {
+                    console.log(count);
+                    callback(err, count, items);
+                });
+            }
+            else{
+                callback(err, null)
+            }
+        });
+};
+
 itemsSchema.methods.addItem = function(item, callback){
     item.save(function(err, item){
         callback(err, item)
