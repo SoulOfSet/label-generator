@@ -114,26 +114,27 @@ var search = function(){
 };
 
 var deleteItems = function(){
+    var data = [];
+    var err = null;
     $('#items-table tr').filter(':has(:checkbox:checked)').each(function() {
         $tds = $(this).find("td");             // Finds all children <td> elements
 
-        var data = [];
+
         $.each($tds, function() {
             if($(this).attr('value') === "_id"){
                 data[data.length] = $(this).text();
             }
         });
-
-        var ids = JSON.stringify(data);
-        $.post("items/delete_items", {items: ids}, function(){
-            alert("Success");
-            getItems(10, 0, "lTitle")
-
-        }).fail(function(data){
-            err = JSON.parse(data.responseText);
-            alert(err.error.errmsg);
-        })
     });
+    var ids = JSON.stringify(data);
+    $.post("items/delete_items", {items: ids}, function(){
+        alert("Success");
+        getItems(10, 0, "lTitle")
+
+    }).fail(function(data){
+        err = JSON.parse(data.responseText);
+        alert(err.error.errmsg);
+    })
 };
 
 
