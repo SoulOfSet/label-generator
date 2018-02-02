@@ -25,7 +25,7 @@ router.post('/add_item', function (req, res) {
 });
 
 router.post('/delete_items', function (req, res) {
-    itemsController.deleteItems(req.body.items, function(state){
+    itemsController.deleteItems(JSON.parse(req.body.items), function(state){
         if(state.status){
             res.json({status: "success"});
         }else{

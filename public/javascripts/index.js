@@ -16,15 +16,15 @@ $( document ).ready(function() {
     $(".loader").show();
     getItems(10, 0, "lTitle", null);
 
-    $("#items-table").on('click', '#item-print', function (data) {
+    $("#items-table").on('click', '#item-print', function () {
         var $row = $(this).closest("tr"),       // Finds the closest row <tr>
-            $tds = $row.find("td");             // Finds all children <td> elements
+                $tds = $row.find("td");             // Finds all children <td> elements
 
-        var values = {};
-        $.each($tds, function() {
-            if($(this).attr('value') !== undefined){
-                values[$(this).attr('value')] = $(this).text();
-            }
+            var values = {};
+            $.each($tds, function() {
+                if($(this).attr('value') !== "_id"){
+                    values[$(this).attr('value')] = $(this).text();
+                }
 
         });
         printData(values);
@@ -60,7 +60,7 @@ var updateTable = function(data, count){
             "<td value='usedBy'>" + makeDate(checkNullUndef(item.lUsedBy)) + "</td>" +
             "<td value='PLU'>" + item.lPLU + "</td>" +
             "<td><input id='item-select' type='checkbox' value='Print'/></td>" +
-            "<td style='display: none'>" + item._id + "</td>")
+            "<td value='_id' style='display: none'>" + item._id + "</td>")
     });
     $(".loader").hide();
 };
@@ -111,7 +111,29 @@ var search = function(){
     else{
         getItems(numPerPage, 1, "lTitle", query);
     }
+};
 
+var deleteItems = function(){
+    $('#items-table tr').filter(':has(:checkbox:checked)').each(function() {
+        $tds = $(this).find("td");             // Finds all children <td> elements
+
+        var data = [];
+        $.each($tds, function() {
+            if($(this).attr('value') === "_id"){
+                data[data.length] = $(this).text();
+            }
+        });
+
+        var ids = JSON.stringify(data);
+        $.post("items/delete_items", {items: ids}, function(){
+            alert("Success");
+            getItems(10, 0, "lTitle")
+
+        }).fail(function(data){
+            err = JSON.parse(data.responseText);
+            alert(err.error.errmsg);
+        })
+    });
 };
 
 
