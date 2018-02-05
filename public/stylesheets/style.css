@@ -40,6 +40,7 @@
 
     #print-section {
         display: block;
+        height: 100%;
     }
 
     #dynContainer{
@@ -56,8 +57,39 @@
         page-break-after: avoid;
     }
 
-    p{
-        font-size: 100%;
+    #bold-title-container{
+        position: relative;
+        height: 1cm
     }
+
+    #title-container{
+        position: relative;
+        height: 0.5cm
+    }
+
+    #ingredients-container{
+        position: relative;
+        height: 3cm;
+    }
+
+    #ingredients-container p{
+        font-size: 4vw;
+    }
+
+    #used-by-container{
+        position: relative;
+        height: 1cm;
+    }
+
+    #barcode-container{
+        position: relative;
+        height: 1.5cm;
+    }
+
+    #barcode-number-container{
+        position: relative;
+        height: 0.5cm;
+    }
+
 
 }

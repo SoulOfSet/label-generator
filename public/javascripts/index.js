@@ -42,7 +42,9 @@ var printData = function(row){
     for(var key in row){
          $("#" + 'p' + key).html(row[key]);
     }
-    $("#pbarcode").JsBarcode(row['PLU']);
+    $("#pbarcode").JsBarcode(row['PLU'], {
+        displayValue: false
+    });
     $("#print-section").show();
     window.print();
     $("#print-section").hide();
