@@ -52,7 +52,7 @@ var updateTable = function(data, count){
     $tableBody.empty();
     $.each(data, function(index, item){
         $tableBody.append("<tr>" +
-            "<td><input id='item-print' type='button' value='Print'/></td>" +
+            "<td><input id='item-print' class='btn btn-primary' type='button' value='Print'/></td>" +
             "<td value='boldTitle'>" + item.lBoldTitle + "</td>" +
             "<td value='title'>" + item.lTitle + "</td>" +
             "<td value='price'>" + item.lPrice + "</td>" +
